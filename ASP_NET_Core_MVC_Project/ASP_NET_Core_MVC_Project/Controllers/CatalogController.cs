@@ -8,6 +8,7 @@ namespace ASP_NET_Core_MVC_Project.Controllers
     public class CatalogController : Controller
     {
         private static Catalog _catalog = new Catalog();
+        private object _lock = new object();
         private readonly IEmailSender _emailSender;
 
         public CatalogController(IEmailSender emailSender)
@@ -29,9 +30,12 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProduct([FromForm] Product product)
+        public IActionResult AddProduct([FromForm] Product product)
         {
-            await _emailSender.SendEmailAsync(product);
+            lock (_lock)
+            {
+                _emailSender.SendEmailAsync(product);
+            }
 
             _catalog.AddProduct(product);
             return View();
