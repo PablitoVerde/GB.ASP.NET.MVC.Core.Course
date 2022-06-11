@@ -1,0 +1,15 @@
+﻿@model Catalog
+
+@{
+    ViewData["Title"] = "Список товаров";
+}
+
+@foreach (var p in Model.Products)
+{
+    <div>
+        Артикул: @p.Id <br/>
+        Название: @p.Name <br/>
+        Описание: @p.Description <br/>
+        <img src=@p.LinkToImage alt="logoimage"> <br/>
+    </div>
+}

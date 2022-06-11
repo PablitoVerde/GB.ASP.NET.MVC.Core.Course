@@ -1,0 +1,17 @@
+﻿@model Catalog
+
+@{
+    ViewData["Title"] = "Добавление товара";
+}
+
+<form method="post">
+    Артикул: <input type="text" name="id" required />
+    <br />
+    Имя: <input type="text" name="name" />
+    <br />
+    Описание: <input type="text" name="description" />
+    <br />
+    Ссылка на изображение: <input type="url" name="linktoimage" />
+    <br />
+    <input type="submit" name="submit" value="Создать" />
+</form>
