@@ -22,7 +22,7 @@
         {
             lock (_lock)
             {
-                _list = _list.FindAll(x => x.Equals(item)).ToList();
+                _list = _list.FindAll(x => !x.Equals(item)).ToList();
             }
         }
 
