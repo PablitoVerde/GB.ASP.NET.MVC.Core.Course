@@ -42,10 +42,7 @@ namespace ASP_NET_Core_MVC_Project.Models
         }
         public List<Product> GetProducts()
         {
-            lock (_lock)
-            {
                 return Products.Values.ToList();
-            }
         }
     }
 }
