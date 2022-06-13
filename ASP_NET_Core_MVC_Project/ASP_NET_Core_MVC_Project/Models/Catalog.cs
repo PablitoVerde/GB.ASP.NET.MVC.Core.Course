@@ -31,7 +31,7 @@ namespace ASP_NET_Core_MVC_Project.Models
             return Products.Count();
         }
 
-        public Product FindProduct(int id)
+        public Product? FindProduct(int id)
         {
             return Products[id];
         }
