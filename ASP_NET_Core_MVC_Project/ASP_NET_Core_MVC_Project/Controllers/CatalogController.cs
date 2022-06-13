@@ -16,7 +16,7 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         [HttpGet]
         public IActionResult Products()
         {
-            if (_catalog.Products.Count == 0)
+            if (_catalog.CountProducts() == 0)
             {
                 return NotFound();
             }
@@ -29,7 +29,7 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         [HttpPost]
         public IActionResult AddProduct([FromForm] Product product)
         {
-            _catalog.Products.Add(product);
+            _catalog.AddProduct(product);
             return View();
         }
 

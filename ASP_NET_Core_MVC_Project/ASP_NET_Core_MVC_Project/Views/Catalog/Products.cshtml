@@ -4,7 +4,7 @@
     ViewData["Title"] = "Список товаров";
 }
 
-@foreach (var p in Model.Products)
+@foreach (var p in Model.GetProducts())
 {
     <div>
         Артикул: @p.Id <br/>
