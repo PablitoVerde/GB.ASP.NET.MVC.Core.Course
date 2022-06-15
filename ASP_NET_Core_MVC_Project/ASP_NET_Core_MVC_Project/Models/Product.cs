@@ -1,6 +1,8 @@
-﻿namespace ASP_NET_Core_MVC_Project.Models
+﻿using ASP_NET_Core_MVC_Project.Interfaces;
+
+namespace ASP_NET_Core_MVC_Project.Models
 {
-    public class Product
+    public class Product : IBaseModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
