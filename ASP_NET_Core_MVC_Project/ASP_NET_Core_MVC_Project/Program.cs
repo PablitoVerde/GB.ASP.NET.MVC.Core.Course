@@ -1,9 +1,22 @@
+using Serilog.AspNetCore;
+
+IConfigurationRoot config = new ConfigurationBuilder()
+    .AddUserSecrets<ASP_NET_Core_MVC_Project.Models.EmailSenderCredentials>(true)
+    .Build();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<ASP_NET_Core_MVC_Project.Interfaces.IEmailSender, ASP_NET_Core_MVC_Project.Models.EmailSenderMailKit>();
+builder.Services.Configure<ASP_NET_Core_MVC_Project.Models.SmtpCredentials>(
+   builder.Configuration.GetSection("SmtpCredentials"));
+
+builder.Services.AddSingleton<IConfigurationRoot>(config);
+
+builder.Services.AddSingleton<ASP_NET_Core_MVC_Project.Interfaces.IEmailSender, ASP_NET_Core_MVC_Project.Models.EmailSenderMailKit>();
+
+
 
 var app = builder.Build();
 
