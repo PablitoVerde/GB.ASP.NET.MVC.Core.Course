@@ -1,42 +1,66 @@
-using Serilog.AspNetCore;
+using Serilog;
+using ASP_NET_Core_MVC_Project.Interfaces;
+using ASP_NET_Core_MVC_Project.Models;
 
-IConfigurationRoot config = new ConfigurationBuilder()
-    .AddUserSecrets<ASP_NET_Core_MVC_Project.Models.EmailSenderCredentials>(true)
+
+Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateBootstrapLogger();
+Log.Information("Starting up");
+
+try
+{
+    IConfigurationRoot config = new ConfigurationBuilder()
+    .AddUserSecrets<EmailSenderCredentials>(true)
     .Build();
 
-var builder = WebApplication.CreateBuilder(args);
+    var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+    // Add services to the container.
+    builder.Services.AddControllersWithViews();
 
-builder.Services.Configure<ASP_NET_Core_MVC_Project.Models.SmtpCredentials>(
-   builder.Configuration.GetSection("SmtpCredentials"));
+    builder.Services.Configure<SmtpCredentials>(
+       builder.Configuration.GetSection("SmtpCredentials"));
 
-builder.Services.AddSingleton<IConfigurationRoot>(config);
+    builder.Services.AddSingleton<IConfigurationRoot>(config);
 
-builder.Services.AddSingleton<ASP_NET_Core_MVC_Project.Interfaces.IEmailSender, ASP_NET_Core_MVC_Project.Models.EmailSenderMailKit>();
+    builder.Services.AddSingleton<IEmailSender, EmailSenderMailKit>();
 
+    builder.Host.UseSerilog((_, conf) =>
+    {
+        conf
+        .WriteTo.Console()
+        .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day);
+    });
 
+    var app = builder.Build();
 
-var app = builder.Build();
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseExceptionHandler("/Home/Error");
+        app.UseHsts();
+    }
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+
+    app.UseRouting();
+
+    app.UseAuthorization();
+
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.Run();
+}
+catch (Exception ex)
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    Log.Fatal(ex, "Unhandled exception");
+}
+finally
+{
+    Log.Information("Shut down complete");
+    Log.CloseAndFlush();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
 
-app.UseRouting();
 
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();

@@ -2,8 +2,8 @@
 {
     public class ConcurrentList<T>
     {
-        private List<T> _list;
-        private readonly object _lock = new object();
+        private readonly List<T> _list;
+        private readonly object _lock = new();
 
         public ConcurrentList()
         {
