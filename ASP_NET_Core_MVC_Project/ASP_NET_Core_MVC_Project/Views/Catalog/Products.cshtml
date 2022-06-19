@@ -4,7 +4,7 @@
     ViewData["Title"] = "Список товаров";
 }
 
-@if (Model.GetProducts() != null)
+@if (Model.CountProducts() != null)
 {
     @foreach (var p in Model.GetProducts())
     {
