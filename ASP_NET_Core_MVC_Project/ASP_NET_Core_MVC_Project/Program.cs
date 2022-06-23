@@ -3,6 +3,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<ASP_NET_Core_MVC_Project.Interfaces.IEmailSender, ASP_NET_Core_MVC_Project.Models.EmailSenderMailKit>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

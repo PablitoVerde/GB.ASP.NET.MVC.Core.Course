@@ -31,7 +31,7 @@ namespace ASP_NET_Core_MVC_Project.Models
             return Products.Count();
         }
 
-        public Product FindProduct(int id)
+        public Product? FindProduct(int id)
         {
             return Products[id];
         }
@@ -42,10 +42,7 @@ namespace ASP_NET_Core_MVC_Project.Models
         }
         public List<Product> GetProducts()
         {
-            lock (_lock)
-            {
                 return Products.Values.ToList();
-            }
         }
     }
 }

@@ -1,16 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ASP_NET_Core_MVC_Project.Models;
+using ASP_NET_Core_MVC_Project.Interfaces;
 
 namespace ASP_NET_Core_MVC_Project.Controllers
 {
     public class CatalogController : Controller
     {
         private static Catalog _catalog = new Catalog();
+        private object _lock = new object();
+        private readonly IEmailSender _emailSender;
 
-        public CatalogController()
+        public CatalogController(IEmailSender emailSender)
         {
-
+            _emailSender = emailSender;
         }
 
         [HttpGet]
@@ -29,6 +32,11 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         [HttpPost]
         public IActionResult AddProduct([FromForm] Product product)
         {
+            lock (_lock)
+            {
+                _emailSender.SendEmailAsync(product);
+            }
+
             _catalog.AddProduct(product);
             return View();
         }

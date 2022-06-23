@@ -4,12 +4,15 @@
     ViewData["Title"] = "Список товаров";
 }
 
-@foreach (var p in Model.GetProducts())
+@if (Model.GetProducts() != null)
 {
-    <div>
-        Артикул: @p.Id <br/>
-        Название: @p.Name <br/>
-        Описание: @p.Description <br/>
-        <img src=@p.LinkToImage alt="logoimage"> <br/>
-    </div>
+    @foreach (var p in Model.GetProducts())
+    {
+        <div>
+            Артикул: @p.Id <br />
+            Название: @p.Name <br />
+            Описание: @p.Description <br />
+            <img src=@p.LinkToImage alt="logoimage"> <br />
+        </div>
+    }
 }
