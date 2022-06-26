@@ -1,0 +1,269 @@
+2022-06-19 22:34:57.422 +03:00 [INF] User profile is available. Using 'C:\Users\P\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-19 22:34:59.171 +03:00 [INF] Now listening on: https://localhost:7131
+2022-06-19 22:34:59.171 +03:00 [INF] Now listening on: http://localhost:5131
+2022-06-19 22:34:59.173 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:34:59.174 +03:00 [INF] Hosting environment: Development
+2022-06-19 22:34:59.174 +03:00 [INF] Content root path: D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\
+2022-06-19 22:34:59.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-06-19 22:34:59.561 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:34:59.579 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP_NET_Core_MVC_Project.Controllers.HomeController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:34:59.586 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-19 22:35:01.225 +03:00 [INF] Executed ViewResult - view Index executed in 1638.9114ms.
+2022-06-19 22:35:01.229 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project) in 1648.7054ms
+2022-06-19 22:35:01.230 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:01.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 1744.6481ms
+2022-06-19 22:35:01.298 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - -
+2022-06-19 22:35:01.298 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:35:01.298 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-06-19 22:35:01.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-06-19 22:35:01.324 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-06-19 22:35:01.328 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 29.3643ms
+2022-06-19 22:35:01.350 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\css\site.css'
+2022-06-19 22:35:01.350 +03:00 [INF] Sending file. Request path: '/ASP_NET_Core_MVC_Project.styles.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\obj\Debug\net6.0\scopedcss\bundle\ASP_NET_Core_MVC_Project.styles.css'
+2022-06-19 22:35:01.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 51.9934ms
+2022-06-19 22:35:01.356 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\js\site.js'
+2022-06-19 22:35:01.361 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-06-19 22:35:01.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - - - 200 1141 text/css 62.8666ms
+2022-06-19 22:35:01.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 38.4487ms
+2022-06-19 22:35:01.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162726 text/css 65.0626ms
+2022-06-19 22:35:01.434 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/jquery/dist/jquery.min.js - -
+2022-06-19 22:35:01.435 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-06-19 22:35:01.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:35:01.445 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2022-06-19 22:35:01.445 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2022-06-19 22:35:01.446 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 10.6923ms
+2022-06-19 22:35:01.446 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 11.6596ms
+2022-06-19 22:35:01.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.5611ms
+2022-06-19 22:35:01.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/favicon.ico - -
+2022-06-19 22:35:01.551 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\favicon.ico'
+2022-06-19 22:35:01.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/favicon.ico - - - 200 5430 image/x-icon 3.0253ms
+2022-06-19 22:35:11.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:35:11.668 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:11.670 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:11.671 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:35:11.685 +03:00 [INF] Executed ViewResult - view AddProduct executed in 14.0639ms.
+2022-06-19 22:35:11.686 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 15.1925ms
+2022-06-19 22:35:11.687 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:11.689 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 24.7678ms
+2022-06-19 22:35:11.726 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:35:11.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:35:11.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.8253ms
+2022-06-19 22:35:11.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.1498ms
+2022-06-19 22:35:11.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/favicon.ico - -
+2022-06-19 22:35:11.801 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\favicon.ico'
+2022-06-19 22:35:11.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/favicon.ico - - - 200 5430 image/x-icon 2.4645ms
+2022-06-19 22:35:13.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:35:13.090 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:13.092 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:13.096 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2022-06-19 22:35:13.097 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project) in 4.0782ms
+2022-06-19 22:35:13.097 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:13.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/Products - - - 404 0 - 9.1324ms
+2022-06-19 22:35:15.399 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:35:15.401 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:15.401 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:15.402 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:35:15.407 +03:00 [INF] Executed ViewResult - view AddProduct executed in 5.4706ms.
+2022-06-19 22:35:15.408 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 6.1388ms
+2022-06-19 22:35:15.409 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:15.410 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 10.2769ms
+2022-06-19 22:35:15.435 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:35:15.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.0404ms
+2022-06-19 22:35:17.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:35:17.494 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:17.495 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:17.496 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:35:17.499 +03:00 [INF] Executed ViewResult - view AddProduct executed in 3.3815ms.
+2022-06-19 22:35:17.500 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 4.0013ms
+2022-06-19 22:35:17.500 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:17.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 7.9407ms
+2022-06-19 22:35:17.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:35:17.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:35:17.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.5614ms
+2022-06-19 22:35:17.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.3133ms
+2022-06-19 22:35:18.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:35:18.541 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:18.542 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:18.542 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2022-06-19 22:35:18.543 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project) in 0.4144ms
+2022-06-19 22:35:18.543 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:18.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/Products - - - 404 0 - 3.6447ms
+2022-06-19 22:35:19.803 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:35:19.804 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:19.804 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:35:19.805 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:35:19.808 +03:00 [INF] Executed ViewResult - view AddProduct executed in 2.4524ms.
+2022-06-19 22:35:19.808 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 3.0148ms
+2022-06-19 22:35:19.809 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:35:19.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 7.0189ms
+2022-06-19 22:35:19.834 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:35:19.836 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - -
+2022-06-19 22:35:19.836 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.0844ms
+2022-06-19 22:35:19.904 +03:00 [INF] Sending file. Request path: '/ASP_NET_Core_MVC_Project.styles.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\obj\Debug\net6.0\scopedcss\bundle\ASP_NET_Core_MVC_Project.styles.css'
+2022-06-19 22:35:19.906 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - - - 0 1141 text/css 69.9775ms
+2022-06-19 22:38:12.609 +03:00 [INF] User profile is available. Using 'C:\Users\P\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-19 22:38:12.920 +03:00 [INF] Now listening on: https://localhost:7131
+2022-06-19 22:38:12.921 +03:00 [INF] Now listening on: http://localhost:5131
+2022-06-19 22:38:12.923 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:38:12.923 +03:00 [INF] Hosting environment: Development
+2022-06-19 22:38:12.923 +03:00 [INF] Content root path: D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\
+2022-06-19 22:38:13.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-06-19 22:38:13.369 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:38:13.387 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP_NET_Core_MVC_Project.Controllers.HomeController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:38:13.393 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-19 22:38:13.475 +03:00 [INF] Executed ViewResult - view Index executed in 81.9737ms.
+2022-06-19 22:38:13.478 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project) in 89.4402ms
+2022-06-19 22:38:13.478 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:38:13.494 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 165.0764ms
+2022-06-19 22:38:13.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:38:13.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-06-19 22:38:13.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - -
+2022-06-19 22:38:13.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:38:13.548 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-06-19 22:38:13.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 17.8121ms
+2022-06-19 22:38:13.582 +03:00 [INF] The file /ASP_NET_Core_MVC_Project.styles.css was not modified
+2022-06-19 22:38:13.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - - - 304 - text/css 79.0399ms
+2022-06-19 22:38:13.645 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\css\site.css'
+2022-06-19 22:38:13.645 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-06-19 22:38:13.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 99.3043ms
+2022-06-19 22:38:13.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162726 text/css 107.3465ms
+2022-06-19 22:38:13.653 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 113.8123ms
+2022-06-19 22:38:14.796 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:38:14.798 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:38:14.800 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:38:14.801 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:38:14.812 +03:00 [INF] Executed ViewResult - view AddProduct executed in 10.6919ms.
+2022-06-19 22:38:14.812 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 12.11ms
+2022-06-19 22:38:14.813 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:38:14.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 18.5494ms
+2022-06-19 22:38:14.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:38:14.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:38:14.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.7922ms
+2022-06-19 22:38:14.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.5216ms
+2022-06-19 22:38:15.665 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:38:15.667 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:38:15.668 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:38:15.670 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-19 22:39:26.054 +03:00 [INF] User profile is available. Using 'C:\Users\P\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-19 22:39:26.323 +03:00 [INF] Now listening on: https://localhost:7131
+2022-06-19 22:39:26.324 +03:00 [INF] Now listening on: http://localhost:5131
+2022-06-19 22:39:26.327 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:39:26.328 +03:00 [INF] Hosting environment: Development
+2022-06-19 22:39:26.328 +03:00 [INF] Content root path: D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\
+2022-06-19 22:39:26.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-06-19 22:39:26.826 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:26.855 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP_NET_Core_MVC_Project.Controllers.HomeController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:26.865 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-19 22:39:26.955 +03:00 [INF] Executed ViewResult - view Index executed in 92.6844ms.
+2022-06-19 22:39:26.958 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project) in 101.8836ms
+2022-06-19 22:39:26.959 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:26.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 190.1720ms
+2022-06-19 22:39:27.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - -
+2022-06-19 22:39:27.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:39:27.012 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:39:27.019 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.9719ms
+2022-06-19 22:39:27.034 +03:00 [INF] The file /ASP_NET_Core_MVC_Project.styles.css was not modified
+2022-06-19 22:39:27.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - - - 304 - text/css 29.4441ms
+2022-06-19 22:39:27.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5410ms
+2022-06-19 22:39:28.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:39:28.053 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:28.054 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:28.056 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:39:28.067 +03:00 [INF] Executed ViewResult - view AddProduct executed in 11.8582ms.
+2022-06-19 22:39:28.068 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 12.9076ms
+2022-06-19 22:39:28.068 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:28.069 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 18.6168ms
+2022-06-19 22:39:28.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:39:28.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:39:28.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.4857ms
+2022-06-19 22:39:28.121 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.5036ms
+2022-06-19 22:39:28.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:39:28.917 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:28.918 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:28.920 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-19 22:39:46.090 +03:00 [INF] User profile is available. Using 'C:\Users\P\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-19 22:39:46.314 +03:00 [INF] Now listening on: https://localhost:7131
+2022-06-19 22:39:46.314 +03:00 [INF] Now listening on: http://localhost:5131
+2022-06-19 22:39:46.318 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:39:46.318 +03:00 [INF] Hosting environment: Development
+2022-06-19 22:39:46.319 +03:00 [INF] Content root path: D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\
+2022-06-19 22:39:46.871 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-06-19 22:39:46.920 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:46.938 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP_NET_Core_MVC_Project.Controllers.HomeController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:46.946 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-19 22:39:47.035 +03:00 [INF] Executed ViewResult - view Index executed in 90.0969ms.
+2022-06-19 22:39:47.038 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project) in 98.5188ms
+2022-06-19 22:39:47.039 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:47.058 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 189.6543ms
+2022-06-19 22:39:47.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:39:47.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:39:47.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 8.1576ms
+2022-06-19 22:39:47.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.4906ms
+2022-06-19 22:39:47.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:39:47.986 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:47.987 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:47.989 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:39:48.000 +03:00 [INF] Executed ViewResult - view AddProduct executed in 11.5666ms.
+2022-06-19 22:39:48.001 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 12.6964ms
+2022-06-19 22:39:48.001 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:48.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 18.1071ms
+2022-06-19 22:39:48.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:39:48.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:39:48.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 2.9876ms
+2022-06-19 22:39:48.048 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.5527ms
+2022-06-19 22:39:48.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:39:48.708 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:39:48.709 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:39:48.712 +03:00 [INF] Executing ViewResult, running view Products.
+2022-06-19 22:40:37.733 +03:00 [INF] User profile is available. Using 'C:\Users\P\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-06-19 22:40:37.960 +03:00 [INF] Now listening on: https://localhost:7131
+2022-06-19 22:40:37.965 +03:00 [INF] Now listening on: http://localhost:5131
+2022-06-19 22:40:37.969 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 22:40:37.971 +03:00 [INF] Hosting environment: Development
+2022-06-19 22:40:37.971 +03:00 [INF] Content root path: D:\Geekbrains Study C#\III четверть\ASP.NET MVC Core\Домашнее задание\GB.ASP.NET.MVC.Core.Course\ASP_NET_Core_MVC_Project\ASP_NET_Core_MVC_Project\
+2022-06-19 22:40:38.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-06-19 22:40:38.594 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:38.616 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ASP_NET_Core_MVC_Project.Controllers.HomeController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:40:38.622 +03:00 [INF] Executing ViewResult, running view Index.
+2022-06-19 22:40:38.720 +03:00 [INF] Executed ViewResult - view Index executed in 97.6159ms.
+2022-06-19 22:40:38.724 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project) in 106.7091ms
+2022-06-19 22:40:38.725 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.HomeController.Index (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:38.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 205.4220ms
+2022-06-19 22:40:38.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - -
+2022-06-19 22:40:38.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:40:38.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:40:38.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 7.2594ms
+2022-06-19 22:40:38.799 +03:00 [INF] The file /ASP_NET_Core_MVC_Project.styles.css was not modified
+2022-06-19 22:40:38.807 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ASP_NET_Core_MVC_Project.styles.css?v=hEagtcDnDgfYF_5d-VkcqXxEjA9VMntFxQV-ludnIKE - - - 304 - text/css 26.7466ms
+2022-06-19 22:40:38.808 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.7315ms
+2022-06-19 22:40:39.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:40:39.602 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:39.604 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:40:39.605 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:40:39.619 +03:00 [INF] Executed ViewResult - view AddProduct executed in 13.7176ms.
+2022-06-19 22:40:39.619 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 14.8695ms
+2022-06-19 22:40:39.620 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:39.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 20.7138ms
+2022-06-19 22:40:39.649 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_vs/browserLink - -
+2022-06-19 22:40:39.650 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:40:39.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 2.2432ms
+2022-06-19 22:40:39.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.4931ms
+2022-06-19 22:40:40.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/Products - -
+2022-06-19 22:40:40.394 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:40.396 +03:00 [INF] Route matched with {action = "Products", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Products() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:40:40.401 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2022-06-19 22:40:40.401 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project) in 4.0795ms
+2022-06-19 22:40:40.402 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.Products (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:40.403 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/Products - - - 404 0 - 11.0830ms
+2022-06-19 22:40:42.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Catalog/AddProduct - -
+2022-06-19 22:40:42.507 +03:00 [INF] Executing endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:42.508 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Catalog"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ASP_NET_Core_MVC_Project.Controllers.CatalogController (ASP_NET_Core_MVC_Project).
+2022-06-19 22:40:42.508 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2022-06-19 22:40:42.512 +03:00 [INF] Executed ViewResult - view AddProduct executed in 3.2143ms.
+2022-06-19 22:40:42.512 +03:00 [INF] Executed action ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project) in 3.8928ms
+2022-06-19 22:40:42.513 +03:00 [INF] Executed endpoint 'ASP_NET_Core_MVC_Project.Controllers.CatalogController.AddProduct (ASP_NET_Core_MVC_Project)'
+2022-06-19 22:40:42.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Catalog/AddProduct - - - 200 - text/html;+charset=utf-8 8.5221ms
+2022-06-19 22:40:42.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:40:42.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.0388ms
+2022-06-19 22:40:43.355 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - -
+2022-06-19 22:40:43.357 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7131/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 1.1518ms
