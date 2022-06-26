@@ -1,7 +1,7 @@
 using Serilog;
 using ASP_NET_Core_MVC_Project.Interfaces;
 using ASP_NET_Core_MVC_Project.Models;
-
+using ASP_NET_Core_MVC_Project.Controllers;
 
 Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateBootstrapLogger();
 Log.Information("Starting up");
