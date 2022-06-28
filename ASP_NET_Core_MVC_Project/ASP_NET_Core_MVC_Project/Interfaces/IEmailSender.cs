@@ -5,6 +5,7 @@ namespace ASP_NET_Core_MVC_Project.Interfaces
 {
     public interface IEmailSender
     {
-        public Task SendEmail(Product product);
+        public Task SendEmail(Product product, CancellationToken cancellationToken);
+        public Task SendInfo(string message, CancellationToken cancellationToken);
     }
 }

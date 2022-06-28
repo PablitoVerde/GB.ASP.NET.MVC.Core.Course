@@ -10,6 +10,7 @@ namespace ASP_NET_Core_MVC_Project.Controllers
     {
         private static Catalog _catalog = new Catalog();
         private readonly IEmailSender _emailsender;
+        private CancellationToken _cancelationToken;
 
         public CatalogController(IEmailSender emailSender)
         {
@@ -23,10 +24,10 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddProduct([FromForm] Product product)
+        public IActionResult AddProduct([FromForm] Product product, CancellationToken cancellationToken)
         {
-            _catalog.AddProduct(product);
-            SendEmailNewProduct(product);
+            _catalog.AddProduct(product, cancellationToken);
+            SendEmailNewProduct(product, cancellationToken);
             return View();
         }
 
@@ -36,9 +37,9 @@ namespace ASP_NET_Core_MVC_Project.Controllers
             return View();
         }
 
-        private async Task SendEmailNewProduct(Product product)
+        private async Task SendEmailNewProduct(Product product, CancellationToken cancellationToken)
         {
-            await _emailsender.SendEmail(product);
+            await _emailsender.SendEmail(product, cancellationToken);        
         }
     }
 }

@@ -16,27 +16,27 @@ namespace ASP_NET_Core_MVC_Project.Models
             Products = new ConcurrentDictionary<int, Product>();
         }
 
-        public void AddProduct(Product product)
+        public void AddProduct(Product product, CancellationToken cancellationToken)
         {
             Products.TryAdd(product.Id, product);
         }
 
-        public void DeleteProduct(Product product)
+        public void DeleteProduct(Product product, CancellationToken cancellationToken)
         {
             Products.TryRemove(product.Id, out _);
         }
 
-        public int CountProducts()
+        public int CountProducts(CancellationToken cancellationToken)
         {
             return Products.Count;
         }
 
-        public Product? FindProduct(int id)
+        public Product? FindProduct(int id, CancellationToken cancellationToken)
         {
             return Products[id];
         }
 
-        public void UpdateProduct(Product product)
+        public void UpdateProduct(Product product, CancellationToken cancellationToken)
         {
             Products.TryUpdate(product.Id, product, Products[product.Id]);
         }
