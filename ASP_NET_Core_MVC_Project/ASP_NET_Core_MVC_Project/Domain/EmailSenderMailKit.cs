@@ -4,7 +4,7 @@ using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
 
-namespace ASP_NET_Core_MVC_Project.Models
+namespace ASP_NET_Core_MVC_Project.Domain
 {
     public class EmailSenderMailKit : IEmailSender
     {

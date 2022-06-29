@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using ASP_NET_Core_MVC_Project.Interfaces;
-using ASP_NET_Core_MVC_Project.Models;
+using ASP_NET_Core_MVC_Project.Domain;
 
 namespace ASP_NET_Core_MVC_Project.Services
 {

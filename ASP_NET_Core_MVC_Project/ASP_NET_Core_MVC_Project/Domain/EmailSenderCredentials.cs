@@ -1,4 +1,4 @@
-﻿namespace ASP_NET_Core_MVC_Project.Models
+﻿namespace ASP_NET_Core_MVC_Project.Domain
 {
     public class EmailSenderCredentials
     {
