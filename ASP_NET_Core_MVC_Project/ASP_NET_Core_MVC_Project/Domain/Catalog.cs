@@ -1,6 +1,7 @@
 ﻿using ASP_NET_Core_MVC_Project.Interfaces;
 using Microsoft.Extensions.Options;
 using System.Collections.Concurrent;
+using ASP_NET_Core_MVC_Project.Domain.Events;
 
 namespace ASP_NET_Core_MVC_Project.Domain
 {
@@ -19,6 +20,7 @@ namespace ASP_NET_Core_MVC_Project.Domain
         public void AddProduct(Product product, CancellationToken cancellationToken)
         {
             Products.TryAdd(product.Id, product);
+            DomainEventsManager.Raise(domainEvent: new ProductAdded(product));
         }
 
         public void DeleteProduct(Product product, CancellationToken cancellationToken)

@@ -25,6 +25,8 @@ try
 
     builder.Services.AddHostedService<BackgroundServiceMailing>();
 
+    builder.Services.AddHostedService<ProductAddedEventHandler>();
+
     builder.Services.AddSingleton<IEmailSender, EmailSenderMailKit>();
 
     builder.Host.UseSerilog((_, conf) =>

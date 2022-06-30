@@ -18,11 +18,13 @@ namespace ASP_NET_Core_MVC_Project.Services
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken)
         {
+            _cancelationToken = cancellationToken;
+
             using var timer = new PeriodicTimer(TimeSpan.FromMinutes(60));
             Stopwatch sw = Stopwatch.StartNew();
             while (await timer.WaitForNextTickAsync(cancellationToken))
             {
-                _emailSender.SendInfo(DateTime.Now.ToString() + "Онлайн " + sw.Elapsed, cancellationToken);
+                _emailSender.SendInfo(DateTime.Now.ToString() + " Онлайн " + sw.Elapsed, cancellationToken);
             }
         }
     }
