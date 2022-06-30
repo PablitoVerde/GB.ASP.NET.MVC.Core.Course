@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ASP_NET_Core_MVC_Project.Models;
+using ASP_NET_Core_MVC_Project.Domain;
 using ASP_NET_Core_MVC_Project.Interfaces;
 using Microsoft.Extensions.Options;
 
@@ -9,36 +9,22 @@ namespace ASP_NET_Core_MVC_Project.Controllers
     public class CatalogController : Controller
     {
         private static Catalog _catalog = new Catalog();
-        private readonly IEmailSender _emailSender;
-        private readonly IConfigurationRoot _config;
-        private readonly IOptions<SmtpCredentials> _smtpCredentials;
 
-        public CatalogController(IEmailSender emailSender, IConfigurationRoot config, IOptions<SmtpCredentials> options)
+        public CatalogController()
         {
-            _emailSender = emailSender;
-            _config = config;
-            _smtpCredentials = options;
+
         }
 
         [HttpGet]
         public IActionResult Products()
         {
-            if (_catalog.CountProducts() == 0)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return View(_catalog);
-            }
+            return View(_catalog);
         }
 
         [HttpPost]
-        public IActionResult AddProduct([FromForm] Product product)
+        public IActionResult AddProduct([FromForm] Product product, CancellationToken cancellationToken)
         {
-            _emailSender.SendEmail(product, _config, _smtpCredentials);
-
-            _catalog.AddProduct(product);
+            _catalog.AddProduct(product, cancellationToken);
             return View();
         }
 
