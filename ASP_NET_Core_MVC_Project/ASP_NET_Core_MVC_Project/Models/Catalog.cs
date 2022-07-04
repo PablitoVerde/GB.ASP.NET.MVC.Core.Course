@@ -1,4 +1,6 @@
-﻿using System.Collections.Concurrent;
+﻿using ASP_NET_Core_MVC_Project.Interfaces;
+using Microsoft.Extensions.Options;
+using System.Collections.Concurrent;
 
 namespace ASP_NET_Core_MVC_Project.Models
 {
@@ -9,8 +11,6 @@ namespace ASP_NET_Core_MVC_Project.Models
     {
 
         private ConcurrentDictionary<int, Product> Products { get; set; }
-        private object _lock = new object();
-
         public Catalog()
         {
             Products = new ConcurrentDictionary<int, Product>();
@@ -28,7 +28,7 @@ namespace ASP_NET_Core_MVC_Project.Models
 
         public int CountProducts()
         {
-            return Products.Count();
+            return Products.Count;
         }
 
         public Product? FindProduct(int id)
@@ -42,7 +42,7 @@ namespace ASP_NET_Core_MVC_Project.Models
         }
         public List<Product> GetProducts()
         {
-                return Products.Values.ToList();
+            return Products.Values.ToList();
         }
     }
 }

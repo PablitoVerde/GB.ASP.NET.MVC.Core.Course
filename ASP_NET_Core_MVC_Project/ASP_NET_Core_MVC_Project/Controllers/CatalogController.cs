@@ -9,36 +9,24 @@ namespace ASP_NET_Core_MVC_Project.Controllers
     public class CatalogController : Controller
     {
         private static Catalog _catalog = new Catalog();
-        private readonly IEmailSender _emailSender;
-        private readonly IConfigurationRoot _config;
-        private readonly IOptions<SmtpCredentials> _smtpCredentials;
+        private readonly IEmailSender _emailsender;
 
-        public CatalogController(IEmailSender emailSender, IConfigurationRoot config, IOptions<SmtpCredentials> options)
+        public CatalogController(IEmailSender emailSender)
         {
-            _emailSender = emailSender;
-            _config = config;
-            _smtpCredentials = options;
+            _emailsender = emailSender;
         }
 
         [HttpGet]
         public IActionResult Products()
         {
-            if (_catalog.CountProducts() == 0)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return View(_catalog);
-            }
+            return View(_catalog);
         }
 
         [HttpPost]
         public IActionResult AddProduct([FromForm] Product product)
         {
-            _emailSender.SendEmail(product, _config, _smtpCredentials);
-
             _catalog.AddProduct(product);
+            SendEmailNewProduct(product);
             return View();
         }
 
@@ -46,6 +34,11 @@ namespace ASP_NET_Core_MVC_Project.Controllers
         public IActionResult AddProduct()
         {
             return View();
+        }
+
+        private async Task SendEmailNewProduct(Product product)
+        {
+            await _emailsender.SendEmail(product);
         }
     }
 }
